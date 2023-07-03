@@ -73,7 +73,7 @@ export const scrollAnimation = (position,target,onUpdate) => {
             immediateRender: false
         }
     })
-    .to('.disply-section',{
+    .to('.display-section',{
         opacity: 1,
         scrollTrigger:{
             trigger: '.display-section',

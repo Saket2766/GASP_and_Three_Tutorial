@@ -1,6 +1,14 @@
 import React from 'react';
 
 function DisplaySection() {
+
+    const handleTop = () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
     return (
         <div className='display-section wrapper'>
             <h2 className='title'>New</h2>
@@ -11,7 +19,7 @@ function DisplaySection() {
             <button className='button'>
                 Try Me!
             </button>
-            <button className='back-button'>
+            <button className='back-button' onClick={handleTop}>
                 TOP
             </button>
         </div>
